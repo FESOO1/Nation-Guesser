@@ -89,10 +89,13 @@
     height: 50px;
 }
 
+.nation-guesser-main-menu-itself-mode-button-active {
+    height: auto;
+}
+
 /* MODE BUTTON CONTAINER INNER */
 
 .nation-guesser-main-menu-itself-mode-container {
-    height: 50px;
     display: flex;
     flex-direction: column;
     padding: 10px;
