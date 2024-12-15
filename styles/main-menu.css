@@ -93,6 +93,7 @@
 
 .nation-guesser-main-menu-itself-mode-button-active {
     height: auto;
+    border-bottom: 1px solid rgba(255,255,255,0.01);
 }
 
 /* MODE BUTTON CONTAINER INNER */
