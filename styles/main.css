@@ -4,6 +4,31 @@
     --f-poppins: "Poppins", sans-serif:
 }
 
+@font-face {
+    font-family: fontExtraLight;
+    src: url(../assets/fonts/Chillax-Extralight.woff2);
+}
+
+@font-face {
+    font-family: fontLight;
+    src: url(../assets/fonts/Chillax-Light.woff2);
+}
+
+@font-face {
+    font-family: fontMedium;
+    src: url(../assets/fonts/Chillax-Medium.woff2);
+}
+
+@font-face {
+    font-family: fontSemidBold;
+    src: url(../assets/fonts/Chillax-Semibold.woff2);
+}
+
+@font-face {
+    font-family: fontBold;
+    src: url(../assets/fonts/Chillax-Bold.woff2);
+}
+
 * {
     padding: 0;
     margin: 0;
