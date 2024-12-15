@@ -2,6 +2,7 @@ const countryApi = 'https://restcountries.com/v3.1/all';
 const guessByFlagInput = document.querySelector('#guessByFlagInput');
 const submitGuessButton = document.querySelector('#submitGuessButton');
 const modeOneNextButton = document.querySelector('#modeOneNextButton');
+const modeOneIndicateButton = document.querySelector('#modeOneIndicateButton');
 const modeOneCountryImage = document.querySelector('.nation-guesser-mode-one-itself-random-country-image-itself');
 const modeOneCountryName = document.querySelector('.nation-guesser-mode-one-itself-random-country-name');
 let countryName = '';
@@ -173,6 +174,7 @@ const countriesArray = ["Afghanistan","Albania","Algeria","Andorra","Angola","An
 "Zambia",
 "Zimbabwe"];
 let randomCountryName = '';
+let hiddenCountryName;
 
 
 // RETRIEVE DATA FROM REST COUNTRIES API
@@ -187,6 +189,7 @@ async function getDataFromAnApi() {
     modeOneCountryImage.src = countryData[0].flags.png;
     modeOneCountryImage.alt = countryData[0].flags.alt;
     modeOneCountryName.textContent = hideCountyName(countryData[0].name.common);
+    hiddenCountryName = hideCountyName(countryData[0].name.common);
     countryName = countryData[0].name.common;
 
     // DISBALING THE NEXT BUTTON
@@ -231,6 +234,16 @@ function checkIfTheGuessIsCorrect(e) {
     };
 };
 
+// GIVE AN INDICATION SO THAT A USER CAN FIND THE COUNTRY'S NAME
+
+/* function giveAnIndication() {
+    let chosenRandomCharacter = countryName[Math.floor(Math.random() * countryName.length)];
+    const chosenRandomCharacterNumber = countryName.indexOf(chosenRandomCharacter);
+    modeOneCountryName.textContent = hiddenCountryName;
+    console.log(chosenRandomCharacter);
+}; */
+
 // INITIALIZE BUTTONS
 submitGuessButton.addEventListener('click', checkIfTheGuessIsCorrect);
 modeOneNextButton.addEventListener('click', getDataFromAnApi);
+modeOneIndicateButton.addEventListener('click', giveAnIndication);
