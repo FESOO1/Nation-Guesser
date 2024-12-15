@@ -71,12 +71,16 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nation-guesser-main-menu-itself-button-itself:hover {
+.nation-guesser-main-menu-itself-button-itself-hover {
     background-color: rgb(36,35,37);
 }
 
 .nation-guesser-main-menu-itself-button-itself:active {
     background-color: rgb(33,32,34);
+}
+
+.nation-guesser-main-menu-itself-button-itself-active {
+    background-color: rgb(36,35,37);
 }
 
 /* MODE BUTTON CONTAINER */
