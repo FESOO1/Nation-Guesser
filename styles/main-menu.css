@@ -51,24 +51,23 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: 300px;
+    width: 250px;
     font-family: fontMedium;
 }
 
 .nation-guesser-main-menu-itself-button-itself {
     width: 100%;
     height: 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     border: 0;
     background-color: rgb(31,30,32);
     color: white;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    /* border-bottom: 1px solid rgba(255,255,255,0.02); */
+    border: 1px solid rgba(255,255,255,0.05);
     cursor: pointer;
     transition: background-color 200ms;
-    box-shadow: 0 1px 0 black;
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.7);
 }
 
 .nation-guesser-main-menu-itself-button-itself-hover {
@@ -87,8 +86,8 @@
 
 .nation-guesser-main-menu-itself-mode-button {
     background-color: rgb(25,24,26);
-    border-radius: 0 0 0.2rem 0.2rem;
-    height: 51px;
+    border-radius: 0.5rem;
+    height: 56px;
     overflow: hidden;
 }
 
@@ -103,6 +102,7 @@
     flex-direction: column;
     padding: 10px;
     row-gap: 10px;
+    padding-top: 15px;
 }
 
 .nation-guesser-main-menu-itself-mode-button-itself {
