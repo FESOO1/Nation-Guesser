@@ -50,7 +50,7 @@
 .nation-guesser-main-menu-itself-buttons {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
     width: 300px;
     font-family: fontMedium;
 }
@@ -65,10 +65,10 @@
     background-color: rgb(31,30,32);
     color: white;
     border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.02);
+    /* border-bottom: 1px solid rgba(255,255,255,0.02); */
     cursor: pointer;
     transition: background-color 200ms;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 black;
 }
 
 .nation-guesser-main-menu-itself-button-itself-hover {
@@ -88,7 +88,7 @@
 .nation-guesser-main-menu-itself-mode-button {
     background-color: rgb(25,24,26);
     border-radius: 0 0 0.2rem 0.2rem;
-    height: 50px;
+    height: 51px;
     overflow: hidden;
 }
 
@@ -111,7 +111,7 @@
     font-size: 1rem;
     border: 0;
     border-radius: 0.2rem;
-    background-color: rgb(31,30,32);
+    background-color: rgb(40, 40, 40);
     border-top: 1px solid rgba(255,255,255,0.05);
     border-bottom: 1px solid rgba(255,255,255,0.01);
     text-transform: uppercase;
@@ -119,9 +119,9 @@
 }
 
 .nation-guesser-main-menu-itself-mode-button-itself:hover {
-    background-color: rgb(36,35,37);
+    background-color: rgb(45, 45, 45);
 }
 
 .nation-guesser-main-menu-itself-mode-button-itself:active {
-    background-color: rgb(33,32,34);
+    background-color: rgb(42, 42, 42);
 }
