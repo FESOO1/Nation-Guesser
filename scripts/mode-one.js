@@ -236,12 +236,10 @@ function checkIfTheGuessIsCorrect(e) {
 
 // GIVE AN INDICATION SO THAT A USER CAN FIND THE COUNTRY'S NAME
 
-/* function giveAnIndication() {
+function giveAnIndication() {
     let chosenRandomCharacter = countryName[Math.floor(Math.random() * countryName.length)];
     const chosenRandomCharacterNumber = countryName.indexOf(chosenRandomCharacter);
-    modeOneCountryName.textContent = hiddenCountryName;
-    console.log(chosenRandomCharacter);
-}; */
+};
 
 // INITIALIZE BUTTONS
 submitGuessButton.addEventListener('click', checkIfTheGuessIsCorrect);
