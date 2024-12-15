@@ -1,4 +1,4 @@
-const modesButton = document.querySelector('#modesButton');
+const modesButton = document.getElementById('modesButton');
 const modesContainer = document.querySelector('.nation-guesser-main-menu-itself-mode-button');
 let isModesContainerActivated = false;
 
@@ -15,3 +15,6 @@ function activatingTheModesContainer() {
         isModesContainerActivated = false;
     };
 };
+
+// INITIALIZE BUTTON
+modesButton.addEventListener('click', activatingTheModesContainer);
