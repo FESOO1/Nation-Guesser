@@ -1,5 +1,7 @@
-const mainMenuButtons = document.querySelectorAll('.nation-guesser-main-menu-itself-button-itself');
+const startGameButton = document.getElementById('startGameButton');
 const modesButton = document.getElementById('modesButton');
+const mainMenu = document.querySelector('.nation-guesser-main-menu');
+const mainMenuButtons = document.querySelectorAll('.nation-guesser-main-menu-itself-button-itself');
 const modesContainer = document.querySelector('.nation-guesser-main-menu-itself-mode-button');
 let isModesContainerActivated = false;
 

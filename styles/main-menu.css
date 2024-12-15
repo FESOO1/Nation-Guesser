@@ -10,6 +10,12 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+    transition: opacity 300ms;
+}
+
+.nation-guesser-main-menu-inactive {
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* NATION GUESSER MAIN MENU ITSELF */
@@ -76,6 +82,8 @@
 
 .nation-guesser-main-menu-itself-button-itself:active {
     background-color: rgb(33,32,34);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(6px);
 }
 
 .nation-guesser-main-menu-itself-button-itself-active {

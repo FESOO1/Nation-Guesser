@@ -202,9 +202,10 @@ async function getDataFromAnApi() {
     // ENABLING THE INPUT FIELD AND GUESS SUBMIT BUTTON
     guessByFlagInput.disabled = false;
     submitGuessButton.disabled = false;
-};
 
-getDataFromAnApi();
+    // 
+    mainMenu.classList.add('nation-guesser-main-menu-inactive');
+};
 
 // HIDE THE NAME OF THE COUNTRY THAT A USER IS GUESSING
 
@@ -245,3 +246,4 @@ function giveAnIndication() {
 submitGuessButton.addEventListener('click', checkIfTheGuessIsCorrect);
 modeOneNextButton.addEventListener('click', getDataFromAnApi);
 modeOneIndicateButton.addEventListener('click', giveAnIndication);
+startGameButton.addEventListener('click', getDataFromAnApi);
