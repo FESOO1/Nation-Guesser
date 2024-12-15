@@ -82,14 +82,17 @@
 /* MODE BUTTON CONTAINER */
 
 .nation-guesser-main-menu-itself-mode-button {
-    height: 50px;
     display: flex;
     flex-direction: column;
     background-color: rgb(25,24,26);
     border-radius: 0 0 0.4rem 0.4rem;
+    height: 50px;
 }
 
+/* MODE BUTTON CONTAINER INNER */
+
 .nation-guesser-main-menu-itself-mode-container {
+    height: 50px;
     display: flex;
     flex-direction: column;
     padding: 10px;
