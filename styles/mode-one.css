@@ -13,7 +13,7 @@
 .nation-guesser-mode-one-itself {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 40px;
 }
 
 /* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY */
@@ -24,6 +24,8 @@
     align-items: center;
     row-gap: 20px;
 }
+
+/* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY IMAGE */
 
 .nation-guesser-mode-one-itself-random-country-image {
     border-radius: 1rem;
@@ -36,6 +38,8 @@
     width: 100%;
 }
 
+/* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY NAME */
+
 .nation-guesser-mode-one-itself-random-country-name {
     color: white;
     font-family: fontMedium;
@@ -45,4 +49,48 @@
     padding-inline: 10px;
     border-radius: 0.4rem;
     border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY INPUT */
+
+.nation-guesser-mode-one-itself-input {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 15px;
+}
+
+.nation-guesser-mode-one-itself-input-itself {
+    height: 50px;
+    font-size: 1rem;
+    font-family: fontMedium;
+    padding-inline: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 0.2rem;
+    background-color: rgb(31,30,32);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+    color: white;
+    outline: none;
+}
+
+.nation-guesser-mode-one-itself-input-button {
+    font-family: fontMedium;
+    font-size: 1rem;
+    padding-inline: 20px;
+    border-radius: 0.2rem;
+    border: 0;
+    color: white;
+    background-color: rgb(41,40,42);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer;
+}
+
+.nation-guesser-mode-one-itself-input-button:hover {
+    background-color: rgb(47,46,48);
+}
+
+.nation-guesser-mode-one-itself-input-button:active {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
 }
