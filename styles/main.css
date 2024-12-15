@@ -43,7 +43,7 @@ body {
 /* NATION GUESSER */
 
 .nation-guesser {
-    padding-block: 40px;
+    padding-block: 20px;
     min-height: 100vh;
     display: flex;
     justify-content: center;

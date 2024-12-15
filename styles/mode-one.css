@@ -1,19 +1,66 @@
 /* NATION GUESSER MODE ONE */
 
 .nation-guesser-mode-one {
-    width: 700px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 40px;
+}
+
+/* NATION GUESSER MODE ONE TOP */
+
+.nation-guesser-mode-one-top {
+
+}
+
+/* NATION GUESSER MODE ONE TOP HINT BUTTON */
+
+.nation-guesser-mode-one-top-hint-button {
+    padding: 10px;
+    border-radius: 0.2rem;
+    border: 0;
+    color: white;
+    background-color: rgb(41,40,42);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 200ms, transform 200ms, box-shadow 200ms, color 200ms;
+}
+
+.nation-guesser-mode-one-top-hint-button-svg {
+    color: white;
+}
+
+.nation-guesser-mode-one-top-hint-button:hover {
+    background-color: rgb(47,46,48);
+}
+
+.nation-guesser-mode-one-top-hint-button:active {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+}
+
+.nation-guesser-mode-one-top-hint-button:disabled {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+    color: gray;
+    cursor: default;
 }
 
 /* NATION GUESSER MODE ONE ITSELF */
 
 .nation-guesser-mode-one-itself {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 20px;
 }
 
 /* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY */
@@ -28,10 +75,12 @@
 /* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY IMAGE */
 
 .nation-guesser-mode-one-itself-random-country-image {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     line-height: 0;
     width: 100%;
+    box-shadow: 0 7px 0 rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .nation-guesser-mode-one-itself-random-country-image-itself {
@@ -43,12 +92,8 @@
 .nation-guesser-mode-one-itself-random-country-name {
     color: white;
     font-family: fontMedium;
-    font-size: 2rem;
-    text-transform: uppercase;
-    background-color: rgb(35,34,36);
-    padding-inline: 10px;
-    border-radius: 0.4rem;
-    border: 1px solid rgba(255,255,255,0.05);
+    font-size: 2.2rem;
+    filter: drop-shadow(0 4px 0 black);
 }
 
 /* NATION GUESSER MODE ONE ITSELF RANDOM COUNTRY INPUT */
@@ -70,6 +115,7 @@
     box-shadow: 0 3px 0 rgba(0,0,0,0.7);
     color: white;
     outline: none;
+    transition: background-color 200ms, transform 200ms, box-shadow 200ms, color 200ms;
 }
 
 .nation-guesser-mode-one-itself-input-button {
@@ -83,6 +129,7 @@
     box-shadow: 0 3px 0 rgba(0,0,0,0.7);
     border: 1px solid rgba(255,255,255,0.05);
     cursor: pointer;
+    transition: background-color 200ms, transform 200ms, box-shadow 200ms, color 200ms;
 }
 
 .nation-guesser-mode-one-itself-input-button:hover {
@@ -93,4 +140,53 @@
     background-color: rgb(43,42,44);
     box-shadow: 0 0 0 rgba(0,0,0,0.7);
     transform: translateY(3px);
+}
+
+.nation-guesser-mode-one-itself-next-button:disabled,
+.nation-guesser-mode-one-itself-input-button:disabled,
+.nation-guesser-mode-one-itself-input-itself:disabled {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+    color: gray;
+    cursor: default;
+}
+
+/* NATION GUESSER MODE ONE ITSELF BUTTONS: NEXT BUTTON */
+
+.nation-guesser-mode-one-itself-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.nation-guesser-mode-one-itself-next-button {
+    width: max-content;
+    font-size: 1.1rem;
+    font-family: fontMedium;
+    padding: 5px 10px;
+    border-radius: 0.2rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(41,40,42);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.nation-guesser-mode-one-itself-next-button:hover {
+    background-color: rgb(47,46,48);
+}
+
+.nation-guesser-mode-one-itself-next-button:active {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+}
+
+.nation-guesser-mode-one-itself-next-button:disabled {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+    color: gray;
+    cursor: default;
 }
