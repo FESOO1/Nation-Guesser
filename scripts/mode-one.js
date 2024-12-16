@@ -205,9 +205,6 @@ async function getDataFromAnApi() {
     guessByFlagInput.disabled = false;
     submitGuessButton.disabled = false;
 
-    // MAKING THE MAIN MENU DISAPPEAR
-    mainMenu.classList.add('nation-guesser-main-menu-inactive');
-
     // SHOWING THE SCORE
     const scoreCounterLS = localStorage.getItem('scoreCounterLS');
     scoreCounterText.style.color = 'white';

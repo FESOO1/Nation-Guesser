@@ -62,9 +62,12 @@ function startTheGameBasedOneTheChoseMode() {
         modeOne.classList.add('nation-guesser-mode-one-active');
         modeTwo.classList.remove('nation-guesser-mode-one-active');
     } else {
+        retrieveDataFromAnApi();
         modeOne.classList.remove('nation-guesser-mode-one-active');
         modeTwo.classList.add('nation-guesser-mode-one-active');
     };
+    // MAKING THE MAIN MENU DISAPPEAR
+    mainMenu.classList.add('nation-guesser-main-menu-inactive');
 };
 
 // INITIALIZE BUTTON

@@ -15,7 +15,8 @@
 .nation-guesser-mode-two-itself {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    align-items: center;
+    row-gap: 30px;
 }
 
 /* NATION GUESSER MODE TWO ITSELF BUTTONS */
@@ -30,10 +31,36 @@
 
 .nation-guesser-mode-two-itself-button-itself {
     width: 100%;
+    height: max-content;
     line-height: 0;
     cursor: pointer;
     border: 0;
-    transition: scale 200ms, border 200ms;
+    transition: scale 200ms;
+    position: relative;
+}
+
+.nation-guesser-mode-two-itself-button-itself-incorrect::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nation-guesser-mode-two-itself-button-itself-correct::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid rgb(64, 255, 0);
+}
+
+.nation-guesser-mode-two-itself-button-itself:disabled {
+    pointer-events: none;
 }
 
 .nation-guesser-mode-two-itself-button-itself-image {
@@ -42,5 +69,47 @@
 
 .nation-guesser-mode-two-itself-button-itself:hover {
     scale: 1.02;
-    border: 1px solid white;
+}
+
+/* NATION GUESSER MODE TWO ITSELF COUNTRY NAME */
+
+.nation-guesser-mode-two-itself-country-name {
+    color: white;
+    font-size: 1.5rem;
+    font-family: fontMedium;
+    text-transform: uppercase;
+}
+
+/* NATION GUESSER MODE TWO ITSELF NEXT BUTTON */
+
+.nation-guesser-mode-two-itself-next-button {
+    width: max-content;
+    font-size: 1.1rem;
+    font-family: fontMedium;
+    padding: 5px 10px;
+    border-radius: 0.2rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(41,40,42);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.nation-guesser-mode-two-itself-next-button:hover {
+    background-color: rgb(47,46,48);
+}
+
+.nation-guesser-mode-two-itself-next-button:active {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+}
+
+.nation-guesser-mode-two-itself-next-button:disabled {
+    background-color: rgb(43,42,44);
+    box-shadow: 0 0 0 rgba(0,0,0,0.7);
+    transform: translateY(3px);
+    color: gray;
+    cursor: default;
 }
