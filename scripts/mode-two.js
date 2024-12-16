@@ -197,8 +197,6 @@ async function retrieveDataFromAnApi() {
     modeTwoNextButton.disabled = true;
 };
 
-retrieveDataFromAnApi();
-
 // GUESSING THE FLAG OF A COUNTRY
 
 for (let i = 0; i < modeTwoButtons.length; i++) {

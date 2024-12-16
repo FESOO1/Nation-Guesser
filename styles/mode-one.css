@@ -120,7 +120,7 @@
 .nation-guesser-mode-one-itself-input {
     display: grid;
     grid-template-columns: 1fr auto;
-    column-gap: 15px;
+    gap: 15px;
 }
 
 .nation-guesser-mode-one-itself-input-itself {
@@ -138,6 +138,7 @@
 }
 
 .nation-guesser-mode-one-itself-input-button {
+    height: 50px;
     font-family: fontMedium;
     font-size: 1rem;
     padding-inline: 20px;
@@ -208,4 +209,32 @@
     transform: translateY(3px);
     color: gray;
     cursor: default;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .nation-guesser-mode-one {
+        width: 100%;
+        padding-inline: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nation-guesser-mode-one {
+        width: 100%;
+        padding-inline: 20px;
+    }
+    .nation-guesser-mode-one-itself-random-country-name {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .nation-guesser-mode-one-itself-input {
+        grid-template-columns: 1fr;
+    }
+    .nation-guesser-mode-one-itself-random-country-name {
+        font-size: 1.5rem;
+    }
 }

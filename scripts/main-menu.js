@@ -60,11 +60,11 @@ function startTheGameBasedOneTheChoseMode() {
     if (mainMenuModeButtons[0].classList.contains('nation-guesser-main-menu-itself-mode-button-itself-active')) {
         getDataFromAnApi();
         modeOne.classList.add('nation-guesser-mode-one-active');
-        modeTwo.classList.remove('nation-guesser-mode-one-active');
+        modeTwo.classList.remove('nation-guesser-mode-two-active');
     } else {
         retrieveDataFromAnApi();
         modeOne.classList.remove('nation-guesser-mode-one-active');
-        modeTwo.classList.add('nation-guesser-mode-one-active');
+        modeTwo.classList.add('nation-guesser-mode-two-active');
     };
     // MAKING THE MAIN MENU DISAPPEAR
     mainMenu.classList.add('nation-guesser-main-menu-inactive');

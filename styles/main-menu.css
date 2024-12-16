@@ -41,6 +41,7 @@
     font-size: 4.53rem;
     font-family: fontSemidBold;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nation-guesser-main-menu-itself-paragraph {
@@ -146,4 +147,31 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .nation-guesser-main-menu-itself-header-container {
+        width: 100%;
+        padding-inline: 30px;
+    }
+    .nation-guesser-main-menu-itself-header {
+        font-size: 2.5rem;
+    }
+    .nation-guesser-main-menu-itself-header-container {
+        row-gap: 10px;
+    }
+    .nation-guesser-main-menu-itself {
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nation-guesser-main-menu-itself-header {
+        font-size: 2rem;
+    }
+    .nation-guesser-main-menu-itself-header-container {
+        padding-inline: 20px;
+    }
 }
