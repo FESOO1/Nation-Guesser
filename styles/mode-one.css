@@ -12,7 +12,21 @@
 /* NATION GUESSER MODE ONE TOP */
 
 .nation-guesser-mode-one-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
+/* NATION GUESSER MODE ONE TOP SCORE */
+
+.nation-guesser-mode-one-top-score {
+    color: white;
+    font-family: fontMedium;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 
 /* NATION GUESSER MODE ONE TOP HINT BUTTON */

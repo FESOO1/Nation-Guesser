@@ -1,3 +1,4 @@
+const scoreCounterText = document.querySelector('.nation-guesser-mode-one-top-score-point');
 const countryApi = 'https://restcountries.com/v3.1/all';
 const guessByFlagInput = document.querySelector('#guessByFlagInput');
 const submitGuessButton = document.querySelector('#submitGuessButton');
@@ -175,6 +176,7 @@ const countriesArray = ["Afghanistan","Albania","Algeria","Andorra","Angola","An
 "Zimbabwe"];
 let randomCountryName = '';
 let hiddenCountryName;
+let scoreCounter = 0;
 
 
 // RETRIEVE DATA FROM REST COUNTRIES API
@@ -205,7 +207,19 @@ async function getDataFromAnApi() {
 
     // MAKING THE MAIN MENU DISAPPEAR
     mainMenu.classList.add('nation-guesser-main-menu-inactive');
+
+    // SHOWING THE SCORE
+    const scoreCounterLS = localStorage.getItem('scoreCounterLS');
+    scoreCounterText.style.color = 'white';
+    
+    if (scoreCounterLS) {
+        scoreCounterText.textContent = scoreCounterLS;
+    } else {
+        scoreCounterText.textContent = '0';
+    };
 };
+
+getDataFromAnApi();
 
 // HIDE THE NAME OF THE COUNTRY THAT A USER IS GUESSING
 
@@ -229,9 +243,20 @@ function checkIfTheGuessIsCorrect(e) {
         // DISABLING THE INPUT FIELD AND GUESS SUBMIT BUTTON
         guessByFlagInput.disabled = true;
         submitGuessButton.disabled = true;
+
+        // ADDING A POINT OF 100 FOR EACH CORRECT ANSWER
+        scoreCounter += 100;
+        scoreCounterText.style.color = 'rgb(64, 255, 0)';
+        scoreCounterText.textContent = '+' + scoreCounter;
+        localStorage.setItem('scoreCounterLS', scoreCounter);
     } else {
-        console.log('It is not correct');
         guessByFlagInput.style.border = '1px solid red';
+        
+        // SUBTRACTING A POINT OF 20 FOR EACH INCORRECT ANSWER
+        scoreCounter -= 20;
+        scoreCounterText.textContent = '-' + scoreCounter;
+        scoreCounterText.style.color = 'red';
+        localStorage.setItem('scoreCounterLS', scoreCounter);
     };
 };
 
@@ -247,3 +272,20 @@ submitGuessButton.addEventListener('click', checkIfTheGuessIsCorrect);
 modeOneNextButton.addEventListener('click', getDataFromAnApi);
 modeOneIndicateButton.addEventListener('click', giveAnIndication);
 startGameButton.addEventListener('click', getDataFromAnApi);
+
+
+
+// LOCAL STORAGE
+
+function displayTheScoreCounter() {
+    const scoreCounterLS = localStorage.getItem('scoreCounterLS');
+
+    if (scoreCounterLS) {
+        scoreCounter = scoreCounterLS;
+        scoreCounterText.textContent = scoreCounterLS;
+    } else {
+        scoreCounterText.textContent = '0';
+    };
+};
+
+displayTheScoreCounter();
