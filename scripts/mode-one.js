@@ -219,8 +219,6 @@ async function getDataFromAnApi() {
     };
 };
 
-getDataFromAnApi();
-
 // HIDE THE NAME OF THE COUNTRY THAT A USER IS GUESSING
 
 function hideCountyName(name) {
@@ -271,9 +269,6 @@ function giveAnIndication() {
 submitGuessButton.addEventListener('click', checkIfTheGuessIsCorrect);
 modeOneNextButton.addEventListener('click', getDataFromAnApi);
 modeOneIndicateButton.addEventListener('click', giveAnIndication);
-startGameButton.addEventListener('click', getDataFromAnApi);
-
-
 
 // LOCAL STORAGE
 

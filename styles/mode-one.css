@@ -2,11 +2,16 @@
 
 .nation-guesser-mode-one {
     width: 500px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 40px;
+}
+
+
+.nation-guesser-mode-one-active {
+    display: flex;
 }
 
 /* NATION GUESSER MODE ONE TOP */

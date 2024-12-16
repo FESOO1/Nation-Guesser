@@ -125,6 +125,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.02);
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
 }
 
 .nation-guesser-main-menu-itself-mode-button-itself:hover {
@@ -133,4 +134,16 @@
 
 .nation-guesser-main-menu-itself-mode-button-itself:active {
     background-color: rgb(48, 47, 49);
+}
+
+.nation-guesser-main-menu-itself-mode-button-itself-active::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgb(64, 255, 0);
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
 }

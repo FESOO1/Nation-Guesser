@@ -1,0 +1,46 @@
+/* NATION GUESSER MODE TWO */
+
+.nation-guesser-mode-two {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nation-guesser-mode-two-active {
+    display: flex;
+}
+
+/* NATION GUESSER MODE TWO ITSELF */
+
+.nation-guesser-mode-two-itself {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+/* NATION GUESSER MODE TWO ITSELF BUTTONS */
+
+.nation-guesser-mode-two-itself-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* NATION GUESSER MODE TWO ITSELF BUTTON ITSELF */
+
+.nation-guesser-mode-two-itself-button-itself {
+    width: 100%;
+    line-height: 0;
+    cursor: pointer;
+    border: 0;
+    transition: scale 200ms, border 200ms;
+}
+
+.nation-guesser-mode-two-itself-button-itself-image {
+    width: 100%;
+}
+
+.nation-guesser-mode-two-itself-button-itself:hover {
+    scale: 1.02;
+    border: 1px solid white;
+}
